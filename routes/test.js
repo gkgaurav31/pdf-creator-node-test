@@ -37,7 +37,7 @@ html: html,
 data: {
     orders,
 },
-path: "/tmp/output.pdf",
+path: "/home/output.pdf",
 type: "", // "stream" || "buffer" || "" ("" defaults to pdf)
 };
 
@@ -52,6 +52,7 @@ router.get('/', function(req, res, next) {
     .catch((error) => {
         console.error(error);
     });
+    
 
   res.send('done');
 });
