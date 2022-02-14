@@ -5,6 +5,11 @@ var router = express.Router();
 var pdf = require("pdf-creator-node");
 var fs = require("fs");
 var path = require("path");
+
+var option={
+    "phantomPath": "./node_modules/phantomjs/bin/phantomjs", 
+    }
+
 var html = fs.readFileSync(path.join(__dirname, "../template.html"), "utf8");
 
 var options = {
