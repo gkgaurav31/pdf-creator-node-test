@@ -36,7 +36,7 @@ html: html,
 data: {
     orders,
 },
-path: "./output.pdf",
+path: "/tmp/output.pdf",
 type: "", // "stream" || "buffer" || "" ("" defaults to pdf)
 };
 
